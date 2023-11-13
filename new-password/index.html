@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>New password</title>
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="new-password.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <div class="wrapper">
+        <img class="logo" src="../logos/logo_yard_sale.svg" alt="logo" />
+        <div class="titles">
+          <h1 class="title-bold-md title">Create a new password</h1>
+          <p class="title-normal-md subtitle">
+            Enter a new password for your account
+          </p>
+        </div>
+        <form class="form" action="/">
+          <div class="fields">
+            <label for="password">Password</label>
+            <input
+              class="input"
+              type="password"
+              name="password"
+              id="password"
+              placeholder="*********"
+              required
+            />
+          </div>
+          <div class="fields">
+            <label for="new-password">Re-enter password</label>
+            <input
+              class="input"
+              type="password"
+              name="new-password"
+              id="new-password"
+              placeholder="*********"
+              required
+            />
+          </div>
+          <button class="primary-btn password-btn" type="submit">
+            Confirm new password
+          </button>
+        </form>
+      </div>
+      <a class="links" href="/">Back home</a>
+    </div>
+  </body>
+</html>

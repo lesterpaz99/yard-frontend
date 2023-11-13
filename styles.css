@@ -1,0 +1,147 @@
+/* Add styles here */
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --inactive-color: #c7c7c7;
+  --light-color: #fff;
+  --input-field-color: #f7f7f7;
+  --text-color: #000;
+  --action-color: #acd9b2;
+  --dark-color: #232830;
+
+  --body-font: 'Roboto', sans-serif;
+  --title-font: 'Quicksand', sans-serif;
+  --text-sm: 1.2rem;
+  --text-md: 1.52rem;
+  --text-lg: 1.64rem;
+
+  font-size: 62.5%;
+}
+
+.home {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--body-font);
+}
+
+.title-bold-lg {
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: var(--text-lg);
+}
+
+.body-bold-lg {
+  font-family: var(--body-font);
+  font-weight: bold;
+  font-size: var(--text-lg);
+}
+
+.title-bold-md {
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: var(--text-md);
+}
+
+.body-bold-md {
+  font-family: var(--body-font);
+  font-weight: bold;
+  font-size: var(--text-md);
+}
+
+.body-normal-sm {
+  font-family: var(--body-font);
+  font-weight: normal;
+  font-size: var(--text-sm);
+}
+
+.title-normal-md {
+  font-family: var(--title-font);
+  font-weight: 500;
+  font-size: var(--text-md);
+}
+
+.title-bold-sm {
+  font-family: var(--title-font);
+  font-weight: bold;
+  font-size: var(--text-sm);
+}
+
+.title-normal-sm {
+  font-family: var(--title-font);
+  font-weight: normal;
+  font-size: var(--text-sm);
+}
+
+.links {
+  font-size: var(--text-sm);
+  color: var(--action-color);
+}
+
+.links:visited {
+  color: var(--action-color);
+}
+
+.input {
+  padding: 10px 6px;
+  border: none;
+  background-color: var(--input-field-color);
+  border-radius: 8px;
+  outline: none;
+  color: var(--dark-color);
+  font-size: var(--text-sm);
+}
+
+.input:invalid {
+  border: 1px solid rgba(255, 0, 0, 0.5);
+}
+
+.primary-btn {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--action-color);
+  color: var(--light-color);
+  cursor: pointer;
+  font-size: var(--text-md);
+}
+
+.secondary-btn {
+  padding: 12px 14px;
+  border: 1px solid var(--action-color);
+  border-radius: 8px;
+  background-color: transparent;
+  color: var(--action-color);
+  cursor: pointer;
+  font-size: var(--text-md);
+  width: 100%;
+}
+
+.inactive-btn {
+  padding: 12px 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: var(--inactive-color);
+  color: var(--light-color);
+  cursor: default;
+}

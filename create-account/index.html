@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>create account</title>
+    <link href="../normalize.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../styles.css" />
+    <link href="create-account.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <div class="wrapper">
+        <div class="titles">
+          <h1 class="title-bold-md title">My account</h1>
+        </div>
+        <form class="form" action="/">
+          <div class="element-container">
+            <div class="fields">
+              <label for="name">Name</label>
+              <input
+                class="input"
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Camila Yokoo"
+                required
+              />
+            </div>
+            <div class="fields">
+              <label for="email">Email address</label>
+              <input
+                class="input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="yourname@mail.com"
+                required
+              />
+            </div>
+            <div class="fields">
+              <label for="password">Password</label>
+              <input
+                class="input"
+                type="password"
+                name="password"
+                id="password"
+                placeholder="*********"
+                required
+              />
+            </div>
+          </div>
+          <div class="element-container">
+            <button class="primary-btn create-btn" type="submit">
+              Create account
+            </button>
+          </div>
+        </form>
+      </div>
+      <!-- <a class="links" href="/">Back home</a> -->
+    </div>
+  </body>
+</html>
