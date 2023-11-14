@@ -1,25 +1,58 @@
 .menu-container {
-    width: 140px;
-    border: 1px solid var(--inactive-color);
-    text-align: end;
+    width: 100%;
+    max-width: 320px;
     font-size: var(--text-md);
-    padding: 1.6rem 1.6rem 0;
-    border-radius: 6px;
+    padding: 4rem 3rem 2rem 3rem;
+    font-weight: bold;
 }
 
-nav ul {
+.close-icon {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    color: var(--inactive-color);
+    font-size: var(--text-lg);
+}
+
+.title {
+    letter-spacing: .2px;
+    margin-bottom: 4rem;
+}
+
+nav .nav__menu {
     display: flex;
     flex-direction: column;
     gap: 3rem;
     list-style: none;
 }
 
-nav ul li:not(li:last-child) {
+nav ul:nth-child(1) {
+    margin-bottom: 4rem;
+}
+nav ul:nth-child(2) {
+    padding-top: 4rem;
+}
+
+nav ul li:not(.account-item) {
     font-weight: bold;
 }
 
-nav ul li:last-child {
-    color: var(--action-color);
+.nav__menu:nth-child(2) {
     border-top: 1px solid var(--input-field-color);
-    padding-block: 2rem;
+    padding-block: 3rem;
+}
+
+.nav__menu--sign-out {
+    font-weight: 100;
+    font-size: var(--text-sm);
+    margin-top: 3rem;
+}
+
+.nav__menu--sign-out p {
+    font-weight: 100;
+}
+
+.nav__menu--sign-out span {
+    color: var(--action-color);
+    font-weight: bold;
 }
