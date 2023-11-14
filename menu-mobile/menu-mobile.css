@@ -1,0 +1,25 @@
+.menu-container {
+    width: 140px;
+    border: 1px solid var(--inactive-color);
+    text-align: end;
+    font-size: var(--text-md);
+    padding: 1.6rem 1.6rem 0;
+    border-radius: 6px;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    list-style: none;
+}
+
+nav ul li:not(li:last-child) {
+    font-weight: bold;
+}
+
+nav ul li:last-child {
+    color: var(--action-color);
+    border-top: 1px solid var(--input-field-color);
+    padding-block: 2rem;
+}
